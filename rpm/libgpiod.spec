@@ -102,7 +102,8 @@ Python binding part.
 	--enable-tools=yes \
 	--enable-bindings-python \
 	--enable-bindings-cxx \
-	--prefix=%{_prefix}
+	--prefix=%{_prefix} \
+	--libdir=%{_libdir}
 %make_build
 
 %install
