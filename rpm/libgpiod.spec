@@ -8,7 +8,6 @@ Summary:        C library and tools for interacting with the linux GPIO characte
 License:        LGPL-2.1-or-later
 URL:            https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/
 Source0:        https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/snapshot/libgpiod-%{version}.tar.gz
-Patch0:         0001-python38.patch
 
 BuildRequires:  autoconf
 BuildRequires:  autoconf-archive
@@ -18,7 +17,6 @@ BuildRequires:  gcc-c++
 BuildRequires:  kmod-devel
 BuildRequires:  libtool
 BuildRequires:  make
-BuildRequires:  python3-devel
 BuildRequires:  kernel-headers
 
 %description
@@ -102,7 +100,6 @@ Python binding part.
 %build
 ./autogen.sh \
 	--enable-tools=yes \
-	--enable-bindings-python \
 	--enable-bindings-cxx \
 	--prefix=%{_prefix} \
 	--libdir=%{_libdir}
