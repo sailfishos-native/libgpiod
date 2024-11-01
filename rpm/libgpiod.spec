@@ -2,7 +2,7 @@
 %define libgpiodcxx_soversion 1
 %define libgpiomockup_soversion 0
 Name:           libgpiod
-Version:        1.6.3
+Version:        2.2.0
 Release:        0
 Summary:        C library and tools for interacting with the linux GPIO character device
 License:        LGPL-2.1-or-later
