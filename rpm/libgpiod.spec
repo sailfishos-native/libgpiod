@@ -114,6 +114,7 @@ rm -rf %{buildroot}%{python3_sitearch}/*.{a,la}
 
 %files devel
 %{_includedir}/*.h*
+%{_includedir}/gpiodcxx/*.h*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libgpiod.pc
 %{_libdir}/pkgconfig/libgpiodcxx.pc
